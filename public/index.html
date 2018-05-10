@@ -67,7 +67,7 @@ ________  ___       ________  ________  ___  __    ________  ________  _________
     <!-- This is the Section Overlay -->
     <div class="section-overlay">
      <div class="container-fluid">
-      <div class="row" style="margin-top: 80px;">
+      <div class="row" style="margin-top: 50px;">
         <div class="col-lg-1 offset-lg-10">
             <img id="overlay-exit" onclick="removeOverlays()" src="assets/images/delete.svg" alt="Exit Overlay" style="cursor:pointer;">
         </div>
@@ -75,7 +75,7 @@ ________  ___       ________  ________  ___  __    ________  ________  _________
 
         <!-- This is the about page -->
         <div class="about-overlay">
-          <div class="row justify-content-center" style="margin-top:40px;">
+          <div class="row justify-content-center" style="margin-top:30px;">
             <h4 class="overlay-header">About Me</h4>
 
           </div>
@@ -94,23 +94,52 @@ ________  ___       ________  ________  ___  __    ________  ________  _________
 
         <!-- This is the projects page -->
         <div class="projects-overlay">
-          <div class="row justify-content-center" style="margin-top:40px;">
+          <div class="row justify-content-center" style="margin-top:30px;">
             <h4 class="overlay-header">Projects</h4>
 
           </div>
-          <div class="row justify-content-center" style="margin-top: 40px;">
-            <div class="col-lg-6">
-              <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut ex ut magna accumsan varius. Sed at sem augue.
-                 Vestibulum et maximus diam, eu euismod ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-                 habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id ipsum urna. Praesent dapibus
-                 diam sed massa aliquet, tincidunt fringilla elit venenatis. Phasellus sollicitudin, ligula sed euismod bibendum, orci est
-                 mattis enim, in malesuada eros quam et metus. Suspendisse interdum sollicitudin eros, non ornare magna mollis et. Donec
-                 in enim eros.</p>
-              <br>
-            </div>
-          </div>
-        </div>
+          <div class="slideshow-container">
 
+            <div class="mySlides fadeIn">
+              <div class="row justify-content-center" style="margin-top:70px;">
+                <img class="project-image" src="assets/images/portfolio-website.png">
+              </div>
+              <div class="row justify-content-center" style="margin-top: 40px;">
+                <div class="col-lg-6 justify-content-center">
+                  <p style="color: white; text-align: center; font-size: 18px"> Portfolio Website</p>
+                  <br>
+                  <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut ex ut magna accumsan varius. Sed at sem augue.
+                     Vestibulum et maximus diam, eu euismod ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                     habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id ipsum urna. Praesent dapibus
+                     diam sed massa aliquet, tincidunt fringilla elit venenatis. Phasellus sollicitudin, ligula sed euismod bibendum, orci est
+                     mattis enim, in malesuada eros quam et metus. Suspendisse interdum sollicitudin eros, non ornare magna mollis et. Donec
+                     in enim eros.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="mySlides fadeIn">
+              <div class="row justify-content-center" style="margin-top:70px;">
+                <img class="project-image" src="assets/images/portfolio-website.png">
+              </div>
+              <div class="row justify-content-center" style="margin-top: 40px;">
+                <div class="col-lg-6">
+                  <p class="overlay-text">And another one</p>
+                </div>
+              </div>
+            </div> -->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+          <div style="text-align:center; position:relative; top:30px;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <!-- <span class="dot" onclick="currentSlide(2)"></span> -->
+          </div>
+
+        </div>
       </div>
     </div>
 
