@@ -54,6 +54,17 @@ body {
   height:30px;
 }
 
+.contact-info {
+  width: 340px;
+  text-align:center;
+  position:relative;
+  right:5px;
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
 .overlay-header{
   text-align:center;
   color: white;
