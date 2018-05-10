@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+
+________  ___       __   ________  ___  _________        _________  ___  ___  _______
+|\   __  \|\  \     |\  \|\   __  \|\  \|\___   ___\     |\___   ___\\  \|\  \|\  ___ \
+\ \  \|\  \ \  \    \ \  \ \  \|\  \ \  \|___ \  \_|     \|___ \  \_\ \  \\\  \ \   __/|
+\ \   __  \ \  \  __\ \  \ \   __  \ \  \   \ \  \           \ \  \ \ \   __  \ \  \_|/__
+ \ \  \ \  \ \  \|\__\_\  \ \  \ \  \ \  \   \ \  \           \ \  \ \ \  \ \  \ \  \_|\ \
+  \ \__\ \__\ \____________\ \__\ \__\ \__\   \ \__\           \ \__\ \ \__\ \__\ \_______\
+   \|__|\|__|\|____________|\|__|\|__|\|__|    \|__|            \|__|  \|__|\|__|\|_______|
+
+
+
+________  ___       ________  ________  ___  __    ________  ________  _________  ________  ___  ___
+|\   __  \|\  \     |\   __  \|\   ____\|\  \|\  \ |\   __  \|\   __  \|\___   ___\\   ____\|\  \|\  \
+\ \  \|\ /\ \  \    \ \  \|\  \ \  \___|\ \  \/  /|\ \  \|\  \ \  \|\  \|___ \  \_\ \  \___|\ \  \\\  \
+\ \   __  \ \  \    \ \   __  \ \  \    \ \   ___  \ \   ____\ \   __  \   \ \  \ \ \  \    \ \   __  \
+ \ \  \|\  \ \  \____\ \  \ \  \ \  \____\ \  \\ \  \ \  \___|\ \  \ \  \   \ \  \ \ \  \____\ \  \ \  \
+  \ \_______\ \_______\ \__\ \__\ \_______\ \__\\ \__\ \__\    \ \__\ \__\   \ \__\ \ \_______\ \__\ \__\
+   \|_______|\|_______|\|__|\|__|\|_______|\|__| \|__|\|__|     \|__|\|__|    \|__|  \|_______|\|__|\|__|
+
+-->
+<html>
+
+<head>
+    <title>My Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Thank you https://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+    integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="hero">
+      <div class="container-fluid">
+        <div class="row" style="margin-top: 25px; margin-left:20px;">
+          <ul class="navigation-links">
+            <li onclick="showClick('.about-overlay')"> ABOUT</li>
+            <li onclick="showClick('.projects-overlay')"><a>PROJECTS</a></li>
+            <li onclick="showClick('.contact-overlay')"><a>CONTACT</a></li>
+          </ul>
+        </div>
+        <div id="icon" class="row justify-content-center" style="margin-top: 350px;">
+          <img id="icon-image" src="assets/images/logo.svg" alt="Logo for Mark Noone Development" style="width: 340px; height:87px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- This is the Section Overlay -->
+    <div class="section-overlay">
+     <div class="container-fluid">
+      <div class="row" style="margin-top: 80px;">
+        <div class="col-lg-1 offset-lg-10">
+            <img id="overlay-exit" onclick="removeOverlays()" src="assets/images/delete.svg" alt="Exit Overlay" style="cursor:pointer;">
+        </div>
+      </div>
+
+        <!-- This is the about page -->
+        <div class="about-overlay">
+          <div class="row justify-content-center" style="margin-top:40px;">
+            <h4 class="overlay-header">About Me</h4>
+
+          </div>
+          <div class="row justify-content-center" style="margin-top: 40px;">
+            <div class="col-lg-6">
+              <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut ex ut magna accumsan varius. Sed at sem augue.
+                 Vestibulum et maximus diam, eu euismod ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                 habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id ipsum urna. Praesent dapibus
+                 diam sed massa aliquet, tincidunt fringilla elit venenatis. Phasellus sollicitudin, ligula sed euismod bibendum, orci est
+                 mattis enim, in malesuada eros quam et metus. Suspendisse interdum sollicitudin eros, non ornare magna mollis et. Donec
+                 in enim eros.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <!-- This is the projects page -->
+        <div class="projects-overlay">
+          <div class="row justify-content-center" style="margin-top:40px;">
+            <h4 class="overlay-header">Projects</h4>
+
+          </div>
+          <div class="row justify-content-center" style="margin-top: 40px;">
+            <div class="col-lg-6">
+              <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut ex ut magna accumsan varius. Sed at sem augue.
+                 Vestibulum et maximus diam, eu euismod ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                 habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id ipsum urna. Praesent dapibus
+                 diam sed massa aliquet, tincidunt fringilla elit venenatis. Phasellus sollicitudin, ligula sed euismod bibendum, orci est
+                 mattis enim, in malesuada eros quam et metus. Suspendisse interdum sollicitudin eros, non ornare magna mollis et. Donec
+                 in enim eros.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <!-- This is the Contact Page -->
+        <div class="contact-overlay">
+          <div class="row justify-content-center" style="margin-top:40px;">
+            <h4 class="overlay-header">Send Me A Message!</h4>
+
+          </div>
+          <div class="row justify-content-center" style="margin-top: 40px;">
+            <div class="col-lg-6">
+              <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut ex ut magna accumsan varius. Sed at sem augue.
+                 Vestibulum et maximus diam, eu euismod ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                 habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id ipsum urna. Praesent dapibus
+                 diam sed massa aliquet, tincidunt fringilla elit venenatis. Phasellus sollicitudin, ligula sed euismod bibendum, orci est
+                 mattis enim, in malesuada eros quam et metus. Suspendisse interdum sollicitudin eros, non ornare magna mollis et. Donec
+                 in enim eros.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+    <script src="assets/js/page.js"></script>
+</body>
+
+</html>

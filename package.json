@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-website",
+  "version": "0.0.1",
+  "description": "This is a website to show of all development projects and work. An electronic CV",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mark Noone",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
