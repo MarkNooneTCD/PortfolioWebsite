@@ -3,6 +3,7 @@ const express = require('express'),
 const app = express();
 
 app.get('/', (req, res) => res.sendfile("./public/index.html"));
+app.get('/about.html', (req, res) => res.sendfile("./public/about.html"));
 
 app.use(express.static(__dirname + '/public'));
 app.listen(3000, () => {

@@ -1,153 +1,58 @@
 <!DOCTYPE html>
-<!--
-
-________  ___       __   ________  ___  _________        _________  ___  ___  _______
-|\   __  \|\  \     |\  \|\   __  \|\  \|\___   ___\     |\___   ___\\  \|\  \|\  ___ \
-\ \  \|\  \ \  \    \ \  \ \  \|\  \ \  \|___ \  \_|     \|___ \  \_\ \  \\\  \ \   __/|
-\ \   __  \ \  \  __\ \  \ \   __  \ \  \   \ \  \           \ \  \ \ \   __  \ \  \_|/__
- \ \  \ \  \ \  \|\__\_\  \ \  \ \  \ \  \   \ \  \           \ \  \ \ \  \ \  \ \  \_|\ \
-  \ \__\ \__\ \____________\ \__\ \__\ \__\   \ \__\           \ \__\ \ \__\ \__\ \_______\
-   \|__|\|__|\|____________|\|__|\|__|\|__|    \|__|            \|__|  \|__|\|__|\|_______|
-
-
-
-________  ___       ________  ________  ___  __    ________  ________  _________  ________  ___  ___
-|\   __  \|\  \     |\   __  \|\   ____\|\  \|\  \ |\   __  \|\   __  \|\___   ___\\   ____\|\  \|\  \
-\ \  \|\ /\ \  \    \ \  \|\  \ \  \___|\ \  \/  /|\ \  \|\  \ \  \|\  \|___ \  \_\ \  \___|\ \  \\\  \
-\ \   __  \ \  \    \ \   __  \ \  \    \ \   ___  \ \   ____\ \   __  \   \ \  \ \ \  \    \ \   __  \
- \ \  \|\  \ \  \____\ \  \ \  \ \  \____\ \  \\ \  \ \  \___|\ \  \ \  \   \ \  \ \ \  \____\ \  \ \  \
-  \ \_______\ \_______\ \__\ \__\ \_______\ \__\\ \__\ \__\    \ \__\ \__\   \ \__\ \ \_______\ \__\ \__\
-   \|_______|\|_______|\|__|\|__|\|_______|\|__| \|__|\|__|     \|__|\|__|    \|__|  \|_______|\|__|\|__|
-
--->
 <html>
-
-<head>
-    <title>My Portfolio Website</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mark Noone | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Thank you https://daneden.github.io/animate.css/ -->
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
     integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
+  </head>
+  <body>
 
-<body>
-
-    <div class="hero">
-      <div class="container-fluid">
-        <div class="row" style="margin-top: 25px; margin-left:20px;">
-          <ul class="navigation-links">
-            <li onclick="showClick('.about-overlay')"> ABOUT</li>
-            <li onclick="showClick('.projects-overlay')">PROJECTS</li>
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-2 offset-lg-1">
+          <p class="left-padding"><span class="name">Mark Noone</span> <br>Designer | Developer</p>
+        </div>
+        <div class="col-lg-2 offset-lg-6">
+          <ul class="nav-links">
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mailto:manoone@tcd.ie?Subject=Hello%20There">Contact</a></li>
           </ul>
         </div>
-        <div id="icon" class="row justify-content-center" style="margin-top: 320px;">
-          <img id="icon-image" src="assets/images/logo.svg" alt="Logo for Mark Noone Development" style="width: 340px; height:87px;">
-        </div>
-        <div class="row justify-content-center" style="margin-top: 60px;">
-          <div class="contact-info" style="right: 8px;">
-            <a href="https://github.com/MarkNooneTCD" target="_blank" style="color:white;"><i class="fab fa-github fa-2x"></i>
-              <span style="padding-left: 20px;position:relative; bottom: 6px;">MarkNooneTCD</span>
-            </a>
-          </div>
-        </div>
-        <div class="row justify-content-center" style="margin-top: 30px;">
-          <div class="contact-info">
-              <a href="mailto:someone@example.com?Subject=Hello%20There" style="color:white;"><i class="fas fa-envelope fa-2x"></i>
-                <span style="padding-left: 20px;position:relative; bottom: 6px;">Manoone@tcd.ie</span>
-              </a>
-          </div>
+      </div>
+
+      <div class="row justify-content-center" style="margin-top: 18vh;">
+        <div class="col-lg-6">
+          <p class="bio">Hi I'm Mark.</p>
+          <br>
+          <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed malesuada dui, quis luctus
+             ipsum. Sed sodales ornare lorem eget aliquam. Etiam enim leo, convallis accumsan imperdiet sit
+             amet, faucibus non libero. Quisque varius luctus nibh vitae tincidunt. Nunc aliquam laoreet aliquet.
+             Nulla lacinia, massa quis malesuada ornare, odio urna aliquet dolor, eget efficitur enim nisl et urna.
+             Aliquam erat volutpat. Quisque commodo velit quis sem laoreet, vel fermentum purus efficitur.
+             Nam tempus felis in augue luctus facilisis.</p>
+          <br>
+          <a href="index.html#work" class="bio-link">Check out my work!</a>
         </div>
       </div>
+
+      <div class="row" style="margin-top: 50vh;">
+        <div class="col-lg-2 offset-lg-1">
+          <p class="section-heading left-padding" id="work">Work + Projects</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+
+      </div>
+
     </div>
 
-    <!-- This is the Section Overlay -->
-    <div class="section-overlay">
-     <div class="container-fluid">
-      <div class="row" style="margin-top: 50px;">
-        <div class="col-lg-1 offset-lg-10">
-            <img id="overlay-exit" onclick="removeOverlays()" src="assets/images/delete.svg" alt="Exit Overlay" style="cursor:pointer;">
-        </div>
-      </div>
-
-        <!-- This is the about page -->
-        <div class="about-overlay">
-          <div class="row justify-content-center" style="margin-top:30px;">
-            <h4 class="overlay-header">About Me</h4>
-
-          </div>
-          <div class="row justify-content-center" style="margin-top: 40px;">
-            <div class="col-lg-6">
-              <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut ex ut magna accumsan varius. Sed at sem augue.
-                 Vestibulum et maximus diam, eu euismod ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-                 habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id ipsum urna. Praesent dapibus
-                 diam sed massa aliquet, tincidunt fringilla elit venenatis. Phasellus sollicitudin, ligula sed euismod bibendum, orci est
-                 mattis enim, in malesuada eros quam et metus. Suspendisse interdum sollicitudin eros, non ornare magna mollis et. Donec
-                 in enim eros.</p>
-              <br>
-            </div>
-          </div>
-        </div>
-
-        <!-- This is the projects page -->
-        <div class="projects-overlay">
-          <div class="row justify-content-center" style="margin-top:30px;">
-            <h4 class="overlay-header">Projects</h4>
-
-          </div>
-          <div class="slideshow-container">
-
-            <div class="mySlides fadeIn">
-              <div class="row justify-content-center" style="margin-top:70px;">
-                <img class="project-image" src="assets/images/portfolio-website.png">
-              </div>
-              <div class="row justify-content-center" style="margin-top: 40px;">
-                <div class="col-lg-6 justify-content-center">
-                  <p style="color: white; text-align: center; font-size: 18px"> Portfolio Website</p>
-                  <br>
-                  <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut ex ut magna accumsan varius. Sed at sem augue.
-                     Vestibulum et maximus diam, eu euismod ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-                     habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id ipsum urna. Praesent dapibus
-                     diam sed massa aliquet, tincidunt fringilla elit venenatis. Phasellus sollicitudin, ligula sed euismod bibendum, orci est
-                     mattis enim, in malesuada eros quam et metus. Suspendisse interdum sollicitudin eros, non ornare magna mollis et. Donec
-                     in enim eros.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="mySlides fadeIn">
-              <div class="row justify-content-center" style="margin-top:70px;">
-                <img class="project-image" src="assets/images/portfolio-website.png">
-              </div>
-              <div class="row justify-content-center" style="margin-top: 40px;">
-                <div class="col-lg-6">
-                  <p class="overlay-text">And another one</p>
-                </div>
-              </div>
-            </div> -->
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-          </div>
-
-          <div style="text-align:center; position:relative; top:30px;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <!-- <span class="dot" onclick="currentSlide(2)"></span> -->
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-    <script src="assets/js/page.js"></script>
-</body>
-
+  </body>
 </html>

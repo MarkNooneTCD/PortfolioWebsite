@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+
+    /* Background styles */
+    background: linear-gradient(
+                     rgba(20,20,20, .3),
+                     rgba(20,20,20, .3)),
+                     url('/assets/images/slide2.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+/* .hero-inner{
+  margin: auto;
+  position: relative;
+  bottom: 40px;
+  right: 30px;
+} */
+
+.navigation-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-links li {
+  display:inline;
+  margin: 8px;
+  margin-right: 20px;
+  padding-bottom: 2px;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+#overlay-exit {
+  width: 30px;
+  height:30px;
+}
+
+.project-image {
+  height: 300px;
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
+.contact-info {
+  width: 340px;
+  text-align:center;
+  position:relative;
+  right:5px;
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.overlay-header{
+  text-align:center;
+  color: white;
+  font-weight: 300;
+}
+
+.overlay-text {
+  text-align:center;
+  color: white;
+  font-size: 15px;
+  word-spacing: 3px;
+}
+
+.section-overlay {
+  position:fixed;
+  display:none;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: none;
+  right: 0px;
+  left:0;
+  top:0;
+  bottom: 0px;
+  z-index: 10;
+  background-color: rgba(0,0,0, 0.6);
+}
+
+.navigation-links li:hover{
+  border-bottom: 2px solid white;
+}
+
+/* Slideshow Css */
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+ .prev:not([href]):not([tabindex]) {
+   color:white;
+ }
+
+ .next:not([href]):not([tabindex]) {
+   color:white;
+ }
+
+.next {
+  right: 100px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev{
+  left: 100px;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 9px;
+  width: 9px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
