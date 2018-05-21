@@ -83,6 +83,18 @@ body {
   text-align: right;
 }
 
+.design-image {
+  background: #FAFAFA;
+  text-align: center;
+}
+
+.design-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  text-align: right;
+  color: #7A7A7A;
+}
+
 .about-me {
   color: #7a7a7a;
   line-height: 32px;
