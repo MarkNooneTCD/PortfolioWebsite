@@ -18,6 +18,25 @@ body {
   font-size: 18px;
 }
 
+.work-slide {
+  margin-top: 15vh;
+}
+
+.work-heading {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.work-a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.work-a:hover {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
 .nav-links li a {
   color: #2d2d2d;
   padding-left: 15px;
