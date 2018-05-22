@@ -22,6 +22,11 @@ body {
   margin-top: 15vh;
 }
 
+.design-bg {
+  background: #f7f7f7;
+  padding: 20px;
+}
+
 .work-heading {
   font-weight: bold;
   font-size: 18px;

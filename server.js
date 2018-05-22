@@ -5,6 +5,7 @@ const app = express();
 app.get('/', (req, res) => res.sendfile("./public/index.html"));
 app.get('/about', (req, res) => res.sendfile("./public/about.html"));
 app.get('/acuacica', (req, res) => res.sendfile("./public/acuacica.html"));
+app.get('/acuacicamobile', (req, res) => res.sendfile("./public/acuacicamobile.html"));
 app.get('/cjsgaff', (req, res) => res.sendfile("./public/cjsgaff.html"));
 app.get('/syze', (req, res) => res.sendfile("./public/syze.html"));
 app.get('/stoury', (req, res) => res.sendfile("./public/stoury.html"));
